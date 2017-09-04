@@ -27,7 +27,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 4;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -43,6 +43,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     PhotoImageViewController *vc = [[PhotoImageViewController alloc]init];
     vc.index = indexPath.row;
+    vc.allNum = 4;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

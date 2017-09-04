@@ -117,7 +117,4 @@
     return actualCenter;
 }
 
-- (void)prepareForReuse{
-    [self.backGroundView setZoomScale:1.0f animated:NO];
-}
 @end
