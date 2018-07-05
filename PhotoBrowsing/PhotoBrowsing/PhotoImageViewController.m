@@ -130,7 +130,10 @@
 {
     NSInteger tags = sender.tag;
     if (tags == 1) {
-        [self.navigationController popViewControllerAnimated:YES];
+//        [self.navigationController popViewControllerAnimated:YES];
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+        }];
     }else{
         NSLog(@"更多");
     }

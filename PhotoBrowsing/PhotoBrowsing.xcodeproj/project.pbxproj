@@ -24,6 +24,8 @@
 		0B0D2E4B1F5104C000B890F5 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B0D2E471F5104C000B890F5 /* 1.jpg */; };
 		0B0D2E4C1F5104C000B890F5 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B0D2E481F5104C000B890F5 /* 2.jpg */; };
 		0B0D2E4D1F5104C000B890F5 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B0D2E491F5104C000B890F5 /* 3.jpg */; };
+		0B8E826A202BF8E800538515 /* LinkButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E8269202BF8E800538515 /* LinkButtonView.m */; };
+		0B8E826C202BFCF200538515 /* zan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E826B202BFCF200538515 /* zan@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,9 @@
 		0B0D2E471F5104C000B890F5 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		0B0D2E481F5104C000B890F5 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		0B0D2E491F5104C000B890F5 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		0B8E8268202BF8E800538515 /* LinkButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkButtonView.h; sourceTree = "<group>"; };
+		0B8E8269202BF8E800538515 /* LinkButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkButtonView.m; sourceTree = "<group>"; };
+		0B8E826B202BFCF200538515 /* zan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zan@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,7 @@
 		0B0D2E051F50FCC300B890F5 /* PhotoBrowsing */ = {
 			isa = PBXGroup;
 			children = (
+				0B8E826B202BFCF200538515 /* zan@3x.png */,
 				0B0D2E461F5104C000B890F5 /* 0.jpg */,
 				0B0D2E471F5104C000B890F5 /* 1.jpg */,
 				0B0D2E481F5104C000B890F5 /* 2.jpg */,
@@ -129,6 +135,8 @@
 				0B0D2E0A1F50FCC300B890F5 /* AppDelegate.m */,
 				0B0D2E0C1F50FCC300B890F5 /* ViewController.h */,
 				0B0D2E0D1F50FCC300B890F5 /* ViewController.m */,
+				0B8E8268202BF8E800538515 /* LinkButtonView.h */,
+				0B8E8269202BF8E800538515 /* LinkButtonView.m */,
 				0B0D2E3C1F50FE8E00B890F5 /* PhotoImageViewController.h */,
 				0B0D2E3D1F50FE8E00B890F5 /* PhotoImageViewController.m */,
 				0B0D2E3E1F50FE8E00B890F5 /* PhotoImageViewController.xib */,
@@ -233,7 +241,7 @@
 		0B0D2DFB1F50FCC300B890F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = L;
 				TargetAttributes = {
 					0B0D2E021F50FCC300B890F5 = {
@@ -285,6 +293,7 @@
 				0B0D2E161F50FCC300B890F5 /* Assets.xcassets in Resources */,
 				0B0D2E451F50FFD000B890F5 /* PhotoImageCell.xib in Resources */,
 				0B0D2E111F50FCC300B890F5 /* Main.storyboard in Resources */,
+				0B8E826C202BFCF200538515 /* zan@3x.png in Resources */,
 				0B0D2E4C1F5104C000B890F5 /* 2.jpg in Resources */,
 				0B0D2E4B1F5104C000B890F5 /* 1.jpg in Resources */,
 			);
@@ -311,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8E826A202BF8E800538515 /* LinkButtonView.m in Sources */,
 				0B0D2E0E1F50FCC300B890F5 /* ViewController.m in Sources */,
 				0B0D2E0B1F50FCC300B890F5 /* AppDelegate.m in Sources */,
 				0B0D2E081F50FCC300B890F5 /* main.m in Sources */,
@@ -381,7 +391,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -389,7 +401,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -429,7 +445,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -437,7 +455,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
